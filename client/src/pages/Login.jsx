@@ -31,17 +31,16 @@ return (
     className="flex items-center justify-center min-h-screen py-8 md:py-0 px-4 "
      style={ 
         isSmall
-          ? { backgroundColor: '#f1f5f9' } // small: plain color
+          ? { backgroundColor: '#ffffff' } 
           : { 
               backgroundImage: `repeating-linear-gradient(225deg, rgb(0, 0, 0, 0.05) 0px, rgb(0, 0, 0, 0.05) 2px, transparent 2px, transparent 4px), linear-gradient(270deg, rgb(29, 67, 158), rgb(219, 239, 242))`
-            } // large: gradient
+            } 
       }
     >
-      {/* Outer wrapper */}
+    
       <div className="bg-transparent   w-full flex flex-col-reverse md:flex-row justify-center items-center md:gap-6">
-        {/* Left side - form */}
+        {/* Left side - form........................ */}
         <div className=" flex flex-col justify-center items-center px-4 md:px-8 py-8 max-w-[450px] bg-white rounded-lg shadow-md">
-          {/* Heading */}
           <h1 className="text-2xl md:text-3xl font-semibold mb-2 text-blue-900">
             Welcome Back!
           </h1>
@@ -49,9 +48,9 @@ return (
             Please access your account to begin your adventure
           </p>
 
-          {/* Login form */}
+          {/* Login form..................... */}
           <form className="flex flex-col gap-4 w-full">
-            {/* Email field */}
+            {/* Email field...................... */}
             <label className="flex flex-col gap-1">
               <span className="text-blue-900 font-semibold">Email</span>
               <div className="flex items-center gap-2 p-2 rounded-md border border-blue-900 focus-within:border-blue-500">
@@ -66,7 +65,7 @@ return (
               </div>
             </label>
 
-            {/* Password field */}
+            {/* Password field..................... */}
             <label className="flex flex-col gap-1">
               <span className="text-blue-900 font-semibold">Password</span>
               <div className="flex items-center gap-2 p-2 rounded-md border border-blue-900 focus-within:border-blue-500">
@@ -88,7 +87,7 @@ return (
               </div>
             </label>
 
-            {/* Remember me & Forgot password */}
+            {/* Remember me & Forgot password.................. */}
             <div className="flex items-center justify-between">
               <label className="flex items-center gap-0.5 sm:gap-2">
                 <input aria-label="Remember me" type="checkbox" className="text-blue-500" />
@@ -120,7 +119,7 @@ return (
               <span className="flex-grow border-t border-blue-900/50" ></span>
             </div>
 
-            {/* Social media login */}
+            {/* Social media login................ */}
             <div className="flex gap-4">
               <button
                 aria-label="Login with Google"
@@ -143,7 +142,6 @@ return (
 
         {/* Right side - Lottie or files section*/}
         <div className="flex-1 flex items-center justify-center px-4 sm:w-[400px] md:max-w-2xl">
-          {/* Currently showing fallback text instead of Lottie */}
           <Lottie animationData={lottie} />
         </div>
       </div>
